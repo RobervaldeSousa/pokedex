@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #6ab7f5, #fff);
+    min-height: 100vh;
+}
+
+main {
+    display: inline-block;
+    margin-top: 5%;
+    padding: 15px;
+    position: relative;
+}
+
+.pokedex {
+    width: 100%;
+    max-width: 450px;
+}
+
+.pokemon__image {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+    height: 18%;
+}
+
+.pokemon__data {
+    position: absolute;
+    top: 54.5%;
+    right: 27%;
+    color: #868686;
+    font-weight: 600;
+    font-size: clamp(8px, 5vw, 25px);
+}
+
+.pokemon__name {
+    color: #464d53;
+    text-transform: capitalize;
+}
+
+form {
+    position: absolute;
+    top: 65%;
+    left: 13.5%;
+    width: 65%;
+}
+
+.pesquisa {
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: solid 2px #333;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #464d53;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+}
+
+.botoes {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 1.4rem;
+    width: 65%;
+}
+
+.botao {
+    cursor: pointer;
+    padding: 4%;
+    border: solid 2px #000000;
+    border-radius: 8px;
+    width: 50%;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: clamp(8px, 5vw, 1rem);
+    background-color: #444;
+}
+
+.botao:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
